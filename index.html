@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<title>Pizza</title>
+</head>
+<body>
+	<div class="sticky">
+		<p class="center">&nbsp;&nbsp;&nbsp;Ціна:&nbsp;<span id="prise">0</span><span>&nbsp;грн.</span></p> 
+	</div>
+	<div class="logo_img">
+			<img src="images/logo.png" alt="Pizza" class="logo">
+			<h1>Pizza cooked with love</h1>
+	</div> 
+	
+		Виберіть розмір піци
+		<form action="" name="form_pizza">
+			<label class="option">
+			<input type="radio" name="sizePizza" value="big">
+			Велика
+			</label>
+			<label class="option">
+			<input type="radio" name="sizePizza" value="middle">
+			Середня
+			</label>
+			<label class="option">
+			<input type="radio" name="sizePizza" value="small">
+			Маленька
+			</label>
+			</form>
+			
+			Індігрієнти: <br><br>
+			<label class="check option"><input type="checkbox" class="check__input" onchange="checkAdd()" id="mushrooms">
+			<span class="check__box"></span>
+			Гриби
+			</label>
+			<label class="check option"><input type="checkbox" class="check__input" onchange="checkAdd()" id="bacon">
+			<span class="check__box"></span>
+			Бекон
+			</label>
+			<label class="check option"><input type="checkbox" class="check__input" onchange="checkAdd()" id="tomatoes">
+			<span class="check__box"></span>
+			Помідори
+			</label>
+			<label class="check option"><input type="checkbox" class="check__input" onchange="checkAdd()" id="cheese">
+			<span class="check__box"></span>
+			Сир
+			</label>
+			<label class="check option"><input type="checkbox" class="check__input" onchange="checkAdd()" id="olives">
+			<span class="check__box"></span>
+			Оливки
+			</label>
+			
+			
+			
+			<br><br>
+			
+			Телефон
+			<input type="tel"  placeholder="380-00-00-00-000" minlength="10" pattern="\d{3}-\d{2}-\d{2}-\d{2}-\d{3}" title="Формат телефона 380-00-00-00-000" name="numberPhone" value="" required="required"><br><br>
+			
+			Адрес доставки
+			<input type="text" placeholder="Н-д, вул. Винниченка, 6" title="Формат вул. Винниченка, 6" name="adress" value="" required="required"><br><br>
+			
+			<input type="submit" value="Замовити">
+		</form>
+		<script src="main.js"></script>
+</body>
+</html>
